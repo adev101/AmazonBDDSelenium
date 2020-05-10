@@ -1,5 +1,6 @@
 package com.Demo.AmazonBDD.teststeps;
 
+import com.demo.amazonbdd.core.TestFactory;
 import com.demo.amazonbdd.pom.Login;
 import com.demo.amazonbdd.pom.WishList;
 
@@ -23,6 +24,7 @@ public class WishListSteps {
 		try {
 			WishList obj= new WishList();
 			obj.displayWishList();
+			TestFactory.driver.close();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

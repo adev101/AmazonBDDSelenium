@@ -1,6 +1,7 @@
 package com.Demo.AmazonBDD.teststeps;
 
 import com.demo.amazonbdd.pom.Home;
+import com.demo.amazonbdd.pom.ProdSearchResult;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
@@ -97,4 +98,7 @@ public class HomeSteps {
 			e.printStackTrace();
 		}
 	}
+    
+
+	
 }

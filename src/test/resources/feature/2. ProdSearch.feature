@@ -3,8 +3,8 @@
 #Scenario Description: User is able to search product Amazon successfully
 
 
-
-Feature: Product search on Amazon
+@test1
+Feature: Product search and check wish list on Amazon
 
   
   Background: Login to Amazon portal
@@ -16,14 +16,27 @@ Feature: Product search on Amazon
     And user is able to login successfully
     
 
-  @test
+  @test @sanity
   Scenario: Product search
     Given input file is available at the path
     When user is at home page
     And user searches for the product
     Then Lists all result on first page and saves the result price in same excel
 
+
   @test
+  Scenario Outline: Check distinct supplier
+    Given user is at home page
+    And user searches for the product
+    When User filters for "<brand>" in step
+    Then Lists result with minimum price on first page
+
+    Examples: 
+      | brand  | 
+      | Lenovo | 
+      | Dell | 
+
+  @test @Sprint100
   Scenario: Check wish list
     Given user is at home page
     When user hovers on 'Account and Lists' link

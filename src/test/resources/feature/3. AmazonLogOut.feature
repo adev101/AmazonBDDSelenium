@@ -1,7 +1,7 @@
 #Author: abhinav.dev@gmail.com
 #Scenario: Logout from Amazon web application
 
-@tag
+@test2
 Feature: Check log out from Amazon
   I want to use this template for my feature file
 
@@ -14,7 +14,7 @@ Feature: Check log out from Amazon
     Then user clicks on profile
     And user is able to login successfully
     
-  @test
+  @test2
   Scenario: Logout from Amazon portal
     Given user is at home page
     When user hovers on 'Account and Lists' link

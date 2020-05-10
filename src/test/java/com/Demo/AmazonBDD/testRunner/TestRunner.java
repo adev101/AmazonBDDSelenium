@@ -11,7 +11,7 @@ import cucumber.api.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features= {"src/test/resources/feature"}
 ,glue= {"com.Demo.AmazonBDD.teststeps"}
-,tags= {"@test"}
+,tags= {"@Sprint100"}
 ,plugin= {"html:target/cucumber-html-report","json:target/cucumber.json"})
 
 
